@@ -57,7 +57,7 @@ async def main():
                     continue;
 
                 all_listings.extend(data); # Add this page's listings to our overall list
-                print(f"Page {page_number} finished with {len(data)} listings");
+                # print(f"Page {page_number} finished with {len(data)} listings");
 
                 if len(data) == 0: # If a page has no listings end scraper loop
                     reached_end = True;
@@ -66,7 +66,7 @@ async def main():
                 break;
 
             current_page += batch_size; # Move to the next batch of pages
-        print(f"Total listings: {len(all_listings)}");
+        # print(f"Total listings: {len(all_listings)}");
 
         await request.dispose(); # disposes of the request context to free up resources
 

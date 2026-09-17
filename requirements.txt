@@ -1,0 +1,3 @@
+# the requirements for the project, including libraries and dependencies (obviously)\
+
+playwright==1.63.0
